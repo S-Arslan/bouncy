@@ -1,0 +1,997 @@
+@import fonts
+
+$logo : "BIG-JOHN"
+$source : "SourceSansPro"
+$source-black: "SourceSansPro-Black"
+$open : "OpenSans"
+$menu : "MyriadPro-Regular"
+
+
+html
+	overflow-x: hidden
+
+body
+	width: 100vw
+	overflow-x: hidden
+	margin: 0
+	padding: 0
+
+a
+	text-decoration: none
+	color: inherit
+	&:hover
+		color: inherit
+
+section
+	padding: 70px 0px
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center
+
+// main classes
+
+.about-icon
+	background-color: #81868e
+	color: #ffff
+	font-size: 25px
+	padding: 10px 10px
+	border-radius: 100%
+	&:hover
+		color: white
+		background-color: #19bd9a
+
+.content-title
+	color: #333b46
+	text-transform: uppercase
+.title-description
+	color: #80858b
+	text-align: center
+	width: 50%
+	margin-bottom: 40px
+	@media screen and (max-width: 768px)
+		width: 100%
+
+.green,.black,.white
+	font-weight: 700
+.black
+	color: #636971
+.green
+	color: #19bd9a
+.white
+	color: #ffff
+
+
+// end main classes
+
+.navbar-toggler
+	z-index: 100
+
+.header
+	background-image: url("../img/bg.png")
+	background-repeat: no-repeat
+	background-position: center
+	background-size: cover
+	width: 100vw
+	height: 100vh
+	overflow: hidden
+	.navbar
+		z-index: 50
+		padding-top: 15px
+		@media screen and (max-width: 991px)
+			position: absolute
+			width: 100%
+		.collapsed
+			color: black
+		.show
+			text-align: center
+	.bg-dark
+		@media screen and (min-width: 991px)
+			background-color: rgba(255,255,255,0)!important
+.navbar-brand
+	font-family: $logo
+	font-size: 30px
+.navbar-nav
+	font-family: $menu
+	.nav-item
+		font-size: 18px
+		.nav-link
+			padding: 2px 18px
+			border: 2px solid rgba(255,255,255,0)
+			color: rgba(255,255,255,0.9)
+			box-sizing: border-box
+			&:hover
+				border-color: rgba(255,255,255,100)
+				border-radius: 35px
+				color: rgba(255,255,255,100)
+.main-content 
+	padding-top: 21%
+	@media screen and (max-width: 991px)
+			padding-top: 40%
+	& > h1
+		font-size: 45px
+		letter-spacing: 9px
+		word-spacing: 0px
+	& > h1,p
+	color: rgba(255,255,255,0.8)
+	.main-description
+		padding: 1% 15%
+		line-height: 30px
+		font-family: $open
+	.main-down-icon
+		@media screen and (min-width: 768px)
+			position: absolute
+		@media screen and (max-width: 768px)	
+			position: relative
+			top: 5vh
+			
+.main-down-icon
+	background-color: #19bd9a
+	font-size: 25px
+	padding: 10px 20px
+	border-radius: 50px
+	bottom: 50px
+	color: rgb(255,255,255)
+	&:hover
+		color: rgb(255,255,255)
+
+//end HEADER
+
+// second page
+
+.second-section
+	overflow: hidden
+	color: #333b46
+
+	.second-content
+		text-align: center
+		@media screen and (min-width: 768px)
+			text-align: left
+
+	&__title
+		color: #333b46
+		@media screen and (max-width: 768px)
+			margin-top: 30px
+	&__description
+		color: #81868e
+		line-height: 25px
+		font-size: 17px
+		margin: 40px 0px
+	&__button
+		color: #333b46
+
+
+.btn
+	border: 1px solid
+	border-radius: 50px
+	padding: 5px 20px
+	font-family: $open
+
+// end Second section
+
+.about
+	background-color: #f3f3f3
+	color: #80858b
+	&-content
+		text-align: left
+		@media screen and (max-width: 768px)
+			text-align: center
+	&__icons
+		margin-top: 30px
+		margin-bottom: 70px
+		> a
+			margin: 0px 8px
+
+	.about-content__title
+		color: #464646
+		padding-left: 25px
+	.about-content__description
+		margin-top: 5px
+	.AB_description_right
+		font-size: 15px
+
+// end about pge
+
+// FEATURED PROJECTS
+
+.favorite-projects
+	padding-bottom: 0
+.favorites-slider
+	height: 320px
+	background-color: #ffff
+	overflow: hidden
+	@media screen and (max-width: 991px)
+		height: 650px
+		padding: 0px 10%
+	.fv-slider__item
+		height: 320px
+		@media screen and (max-width: 991px)
+			height: 200px
+			padding: 1px 0px
+		padding: 0
+		position: relative
+		&:hover
+			cursor: pointer
+			.fv-slider__img
+				filter: grayscale(0)
+			.fv-slider__img:after
+				opacity: 0%
+			>h3
+				opacity: 0%
+	.fv-slider__img
+		background-image: url("../img/features/third.jpg")
+		background-size: cover
+		background-repeat: no-repeat
+		background-position: center
+		position: relative
+		width: 100%
+		height: 100%
+		filter: grayscale(1)
+		&:after
+			content: ""
+			background-color: black
+			position: absolute
+			opacity: 70%
+			width: 100%
+			height: 100%
+			position: absolute
+			top: 1px
+			left: 0px
+	.fv-slider__title
+		position: absolute
+		top: 48%
+		width: 100%
+		text-align: center
+		color: #ffff
+
+.content__footer
+	height: 115px
+	background-image: url("../img/features/features__footer.jpg")
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center
+	color: rgba(255,255,255,0.9)
+	font-weight: normal
+	text-align: left
+	@media screen and (max-width: 768px)
+		text-align: center
+		height: 200px
+		padding: 30px 0px
+	p
+		font-size: 20px
+		margin: 0
+		letter-spacing: 1px
+		@media screen and (max-width: 1440px)
+			font-size: 17px
+	.btn
+		color: #ffff
+		margin: 0
+	.container
+		height: 100%
+		.row
+			height: 100%
+
+
+// end favorites
+
+
+// OUR SERVICES
+
+.our-services
+	ul
+		list-style-type: none
+		padding: 10px 0px 0px 0px
+		li
+			margin-bottom: 35px
+			a
+				height: 100%
+				width: 100%
+				margin: 30px 0px
+	h3
+		font-weight: 700
+	@media screen and (max-width: 768px)
+		text-align: center
+		ul,li
+			display: inline-block
+.default-description
+	color: #81868e
+	word-wrap: break-word
+	margin: 30px 0px
+
+.current-icon-description
+	padding: 0px 0px 0px 30px
+	@media screen and (max-width: 768px)
+		width: 95%
+
+
+// PROGRESS CIRCLES
+
+.progressed
+	height: 100%
+	width: 100%
+	margin: 0
+	.col-4
+		padding: 0
+		position: relative
+
+$active: #19bd9a
+
+.progress-circle
+	width: 100%
+	overflow: hidden
+	display: flex
+	justify-content: center
+	position: relative
+	margin-bottom: 30px
+	.circle
+		border: 3px solid #047378
+		border-radius: 100px
+		width: 9vw
+		height: 9vw
+		display: flex
+		justify-content: center
+		align-items: center
+		@media screen and (max-width: 768px)
+			width: 20vw
+			height: 20vw
+
+		.progress-sumn
+			font-family: $open
+			color: #81868e
+			font-weight: 700
+			font-size: 20px
+			>span
+				font-size: 16px
+
+.progress-circle__progress
+	position: absolute
+	top: 0
+	left: 0
+	>.circle
+		border: 4px solid $active
+
+
+
+// IMPRESSeD
+
+
+.impressed
+	padding: 75px 0px
+	background-image: url("../img/png/bouny.png")
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center
+	height: 100%
+	.ipressed__content
+		width: 50%
+		margin: 0
+		padding: 0
+		@media screen and (max-width: 999px)
+			width: 100%
+	> .container
+		position: relative
+	*
+		color: rgba(255,255,255,0.8)
+		text-align: left
+		@media screen and (max-width: 999px)
+			text-align: center
+	h2
+		font-weight: 500
+	h3
+		text-transform: uppercase
+		font-size: 16px
+		font-weight: 700
+	p
+		width: 100%
+	img
+		position: absolute
+		top: -110px
+		margin: 0
+		padding: 0
+		right: 0
+		@media screen and (max-width: 999px)
+			position: relative
+			top: 30px
+			width: 80%
+
+
+
+// PORTFOLIO
+
+.portfolio-page
+	background-color: #f3f3f3
+	.content__footer
+		background-image: url("../img/portfolio__footer.png")
+		height: 250px
+		.row
+			height: 100%
+			padding: 50px 0px
+	.col-3
+		padding: 0.3%
+
+
+.portfolio-tags
+	@media screen and (max-width: 999px)
+		background-color: inherit
+		opacity: 0.8
+		color: #ffff
+		padding: 20px 0px
+		a
+			border: 2px solid rgba(1,1,1,0.9)
+			border-radius: 5px
+			padding: 3px 10px
+			color: rgba(1,1,1,0.9)
+			font-weight: 700
+	.portfolio-tag
+		white-space: nowrap
+		padding: 10px 0px
+		list-style: none
+		& > a
+			position: relative
+			&::after
+				content: " "
+				position: absolute
+				background-color: $active
+				opacity: 0
+				height: 2px
+				width: 0px
+				bottom: -10px
+				left: 10%
+				transition: width 0.3s
+			&:hover
+				&::after
+					width: 80%
+					opacity: 1
+
+
+.portfolio-items
+	height: 950px
+	margin: 35px 0px
+	@media screen and (max-width: 999px)
+		height: 500px
+	@media screen and (max-width: 500px)
+		height: 400px
+	@media screen and (max-width: 375px)
+		height: 350px
+.column__items
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: space-between
+	flex-wrap: wrap
+	height: 100%
+	.portfolio-item
+		width: 100%
+		background-repeat: no-repeat
+		background-size: cover
+		background-position: center
+
+
+.portfolio-items
+	.col-3:nth-child(1)
+		.column__items
+			.portfolio-item
+				&:nth-child(1)
+					height: 36%
+				&:nth-child(2)
+					height: 36%
+				&:nth-child(3)
+					height: 26%
+	.col-3:nth-child(2)
+		.column__items
+			.portfolio-item
+				&:nth-child(1)
+					height: 22%
+				&:nth-child(2)
+					height: 38%
+				&:nth-child(3)
+					height: 38%
+	.col-3:nth-child(3)
+		.column__items
+			.portfolio-item
+				&:nth-child(1)
+					height: 29%
+				&:nth-child(2)
+					height: 40%
+				&:nth-child(3)
+					height: 29%
+	.col-3:nth-child(4)
+		.column__items
+			.portfolio-item
+				&:nth-child(1)
+					height: 35%
+				&:nth-child(2)
+					height: 28%
+				&:nth-child(3)
+					height: 35%
+
+@media screen and (max-width: 999px)
+	.portfolio-items
+		.col-3:nth-child(1)
+			.column__items
+				.portfolio-item
+					&:nth-child(1)
+						height: 32.6%
+					&:nth-child(2)
+						height: 32.6%
+					&:nth-child(3)
+						height: 32.6%
+		.col-3:nth-child(2)
+			.column__items
+				.portfolio-item
+					&:nth-child(1)
+						height: 32.6%
+					&:nth-child(2)
+						height: 32.6%
+					&:nth-child(3)
+						height: 32.6%
+		.col-3:nth-child(3)
+			.column__items
+				.portfolio-item
+					&:nth-child(1)
+						height: 32.6%
+					&:nth-child(2)
+						height: 32.6%
+					&:nth-child(3)
+						height: 32.6%
+		.col-3:nth-child(4)
+			.column__items
+				.portfolio-item
+					&:nth-child(1)
+						height: 32.6%
+					&:nth-child(2)
+						height: 32.6%
+					&:nth-child(3)
+						height: 32.6%
+
+
+//..................THE TEAM PAGE.....................//
+
+.teammate
+	margin-top: 20px
+	.teammate__photo
+		width: 50%
+		> img
+			object-fit: cover
+			width: 100%
+			height: 100%
+		@media screen and (max-width: 999px)
+			text-align: center
+			width: 100%
+			margin-bottom: 40px
+			> img
+				width: 50%
+				height: 50%
+
+	.teammate__description
+		padding-right: 45px
+		width: 70%
+		float: right
+		color: #80858b
+
+		@media screen and (max-width: 999px)
+			width: 100%
+			text-align: center
+			padding: 0
+
+		.stat__desc
+			display: flex
+			justify-content: space-between
+			align-items: center
+			text-transform: uppercase
+			font-family: $source
+			font-size: 20px
+			h4
+				font-size: 22px
+				font-family: $source
+			margin: 5px 0px
+		.stat_scale
+			width: 100%
+			height: 5px
+			background-color: gray
+			position: relative
+			.statistics
+				background-color: $active
+				height: 100%
+				width: 80%
+				content: " "
+				position: absolute
+				top: 0
+				left: 0
+.teammate__title
+	border-right: 5px solid $active
+	padding-right: 40px
+	margin-bottom: 40px
+	@media screen and (max-width: 999px)
+		text-align: center
+		border-left: 5px solid $active
+		padding: 0
+	>h3
+		text-transform: none
+		color: rgba(1,1,1,0.85)
+		font-family: $open
+			
+.teammate__tags
+	text-transform: uppercase
+	color: #80858b
+	font-style: italic
+	font-family: $source
+	font-size: 19px
+	letter-spacing: 1px
+.dots-pagination
+	display: flex
+	justify-content: center
+	.dot-circle
+		border: 2px solid $active
+		border-radius: 50%
+		margin: 80px 2.5px 0px 2.5px
+		width: 12px
+		height: 12px
+		&:hover
+			cursor: pointer
+			border: none
+			background-color: $active
+			padding: 0
+
+.contact-small
+	background-color: rgba(1,1,1,0.5)
+	color: rgba(255,255,255,0.9)
+	background-blend-mode: multiply
+	.btn
+		color: rgba(255,255,255,0.9)
+		margin: 20px 0 0 0
+
+
+
+.testimonials-page
+	background-color: #f3f3f3
+	.testimonials-card
+		margin-top: 20px
+		padding: 5%
+		background-color: rgb(255,255,255)
+		text-align: left
+		@media screen and (max-width: 999px)
+			text-align: center
+
+		.avatar
+			margin: 0 auto
+			margin-bottom: 25px
+			width: 130px
+			height: 130px
+			border-radius: 50%
+			overflow: hidden
+
+		.teammate__name
+			color: $active
+			font-weight: 700
+			font-size: 23px
+			font-family: $open
+
+		.teammate__tag
+			color: rgba(1,1,1,0.8)
+			font-family: $open
+			font-size: 18px
+			letter-spacing: 0px
+			font-style: normal
+		p
+			color: #80858b
+
+
+// ------------ LATEST NEWS -------------------//
+
+
+.blog
+	background-image: url("../img/blog/blog__bg.png")
+	background-blend-mode: multiply
+	background-color: rgba(1,1,1,0.5)
+	color: inherit
+	@media screen and (max-width: 999px)
+		text-align: center
+		& > .container > .blog-card__title
+			justify-content: center
+			& > p
+				font-size: 16px
+		& > .container > .blog-card
+			padding: 0
+			& > div > div > p
+				width: 100%
+	.content-title,
+	.title-description
+		text-align: left
+		color: rgb(200,200,200)
+		font-weight: 500
+		@media screen and (max-width: 999px)
+			text-align: center
+	.title-description
+		width: 40%
+
+	.blog-card
+		padding-left: 50px
+		.title-block
+			.blog-title
+				color: rgb(250,250,250)
+			.post-author
+				font-family: $source
+				font-style: italic
+				letter-spacing: 1px
+				text-transform: uppercase
+				font-size: 16px
+				color: rgba(255,255,255,0.5)
+			.post-status
+				color: rgba(255,255,255,0.5)
+				margin: 10px 0px
+
+		.blog-content
+			> p
+				font-size: 16px
+				width: 80%
+				margin: 50px 0
+				color: rgb(255,255,255)
+		.dots-pagination
+			flex-direction: column
+			justify-content: center
+			align-items: flex-end
+			> a
+				margin: 7px 0px
+				border: 2px solid rgb(255,255,255)
+				&:hover
+					background-color: rgb(255,255,255)
+			@media screen and (max-width: 999px)
+				flex-direction: row
+				justify-content: center
+				align-items: center
+				> a
+					margin: 0 5px
+		button.blog-btn
+			border: none
+			background: none
+			color: rgb(255,255,255)
+			font-family: $open
+			margin-top: 50px
+
+
+// PRICE //
+.price
+	background-color: #f3f3f3
+.price-card
+	background-color: rgb(255,255,255)
+	justify-content: center
+	height: 420px
+	position: relative
+	margin-bottom: 20px
+	overflow: hidden
+	box-shadow: 1px 1px 1px rgba(0,0,0,0.1)
+	&:hover
+		.card__description
+			left: 0px
+			cursor: default
+			opacity: 100
+	@media screen and (max-width: 999px)
+		width: 80%
+	> .card__title
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 20%
+		background-color: $active
+		color: rgb(255,255,255)
+		font-family: $open
+		font-weight: 700
+		font-size: 25px
+		display: flex
+		justify-content: center
+		align-items: center
+		text-transform: uppercase
+	> .card__description
+		position: absolute
+		display: flex
+		opacity: 0
+		flex-direction: column
+		justify-content: space-between
+		color: rgba(1,1,1,0.5)
+		background-color: rgb(255,255,255)
+		align-items: center
+		text-align: left
+		height: 100%
+		width: 100%
+		top: 0
+		left: -99999px
+		transition: opacity 0.3s
+		ul,li
+			list-style-type: none
+		ul
+			height: 80%
+			width: 100%
+			display: flex
+			flex-direction: column
+			font-family: $open
+			font-weight: 700
+			font-size: 20px
+			color: rgba(1,1,1,0.4)
+			justify-content: center
+			padding-left: 20%
+			li
+				line-height: 40px
+		.description-start
+			background-color: $active
+			width: 100%
+			height: 20%
+			display: flex
+			justify-content: center
+			align-items: center
+			color: rgb(255,255,255)
+			font-family: $open
+			font-size: 25px
+	> .card__price
+		color: $active
+		font-family: $source-black
+		font-size: 40px
+	> .price__date
+		color: rgba(1,1,1,0.5)
+		font-size: 25px
+		line-height: 10px
+
+
+
+// SUBSCRIBE US PAGE //
+.subscribe-page
+	*
+		color: rgb(255,255,255)
+.submit-form
+	> *
+		height: 50px
+	> .email
+		border: 1px solid rgba(255,255,255,0.6)
+		background: none
+		margin-right: 10px
+		@media screen and (max-width: 577px)
+			margin: 0px 0px 20px 0px
+		&::placeholder
+			color: rgb(255,255,255)
+			font-family: $open
+			padding-left: 10px
+.submit__btn
+	background: $active
+	border: none
+	font-family: $open
+	color: rgb(255,255,255)
+
+
+
+	// CONTACT PAGE //
+
+.contact-page
+	background-color: #f3f3f3
+	.contact-card
+		text-align: center
+		background-color: rgb(255,255,255)
+		padding: 0
+		width: 30%
+		height: 290px
+		position: relative
+		@media screen and (max-width: 768px)
+			width: 70%
+			margin-bottom: 30px
+		img
+			height: 55%
+		.contact-image__overflow
+			position: absolute
+			height: 55%
+			top: 0
+			left: 0
+			display: flex
+			justify-content: center
+			align-items: center
+			font-size: 40px
+			color: rgba(255,255,255,0.8)
+		*
+			width: 100%
+			font-family: $open
+			text-transform: uppercase
+		h3
+			margin-top: 20px
+			font-size: 20px
+			@media screen and (max-width: 768px)
+				font-size: 17px
+		p
+			color: rgba(1,1,1,0.5)
+			font-size: 16px
+			@media screen and (max-width: 768px)
+				font-size: 14px
+
+
+
+// submit-page //
+
+.submit-page
+	input
+		border: 1px solid #d8dce0
+		height: 40px
+		margin-bottom: 30px
+		font-family: $open
+		&::placeholder
+			color: rgba(1,1,1,0.5)
+	textarea
+		border: 1px solid #d8dced
+		height: 300px
+	.submit__btn
+		height: 50px
+		margin-top: 30px
+
+
+	// MAP //
+
+.map
+	padding: 0px
+	position: relative
+	iframe
+		width: 100%
+		height: 500px
+
+.map__overflow
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	background-color: rgba(1,1,1,0.8)
+	display: flex
+	justify-content: center
+	align-items: center
+	h3
+		color: rgb(255,255,255)
+		text-transform: uppercase
+		font-family: $open
+		@media screen and (max-width: 500px)
+			font-size: 16px
+	.main-down-icon
+		display: flex
+		justify-content: center
+		align-items: center
+		padding: 0
+		margin-bottom: 6px
+		width: 25px
+		height: 25px
+		font-size: 20px
+		margin-left: 20px
+		line-height: 0px
+		@media screen and (max-width: 500px)
+			width: 15px
+			height: 15px
+			font-size: 15px
+			margin-left: 5px
+
+
+
+// FOOTER   ///
+
+
+footer
+	display: flex
+	flex-direction: column
+	align-items: center
+	padding: 100px 0px
+	background-color: #f3f3f3
+	h2
+		margin-top: 50px
+		margin-bottom: 25px
+		font-family: $logo
+		color: #323a45
+	p
+		color: #81868e
+	
+	.icons
+		font-size: 35px
+		margin-top: 10px
+		a
+			margin: 0px 3px
+			&:nth-child(1)
+				color: #3b5998
+			&:nth-child(2)
+				color: #26a6d1
+			&:nth-child(3)
+				color: #0e76a8
+			&:nth-child(4)
+				color: #3f729b
+			&:nth-child(5)
+				color: #0e76a8
